@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "ecosystem": "Go",
+  "verifiedAt": "2026-08-29",
+  "cases": {
+    "github.com/dgrijalva/jwt-go@v3.2.0+incompatible": { "verdict": "cve", "reference": "CVE-2020-26160" },
+    "github.com/gin-gonic/gin@v1.6.0": { "verdict": "cve", "reference": "CVE-2020-28483" },
+    "golang.org/x/text@v0.3.0": { "verdict": "cve", "reference": "CVE-2020-14040" },
+    "github.com/stretchr/testify@v1.9.0": { "verdict": "clean", "why": "precision control" }
+  }
+}
