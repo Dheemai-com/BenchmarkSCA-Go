@@ -13,7 +13,7 @@ precision or recall denominators.
 |---:|---:|---:|---:|---:|---:|---:|
 | 26 | 4 | 22 | 100.00% | 100.00% | 100.00% | 100.00% |
 
-The score is pinned to staging scan commit `ff1187b` and analyzer `3db6559658cd`.
+The score is pinned to staging scan commit `0de804a` and analyzer `3db6559658cd`.
 
 ## Coverage and reproducibility
 

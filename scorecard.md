@@ -1,7 +1,7 @@
 # BenchmarkSCA-Go scorecard
 
 - Corpus: **26** fully labelled resolved packages
-- Scan commit: `ff1187b`
+- Scan commit: `0de804a`
 - Analyzer: `3db6559658cd`
 - Precision: **100.00%**
 - Recall: **100.00%**
