@@ -1,0 +1,135 @@
+{
+  "scan": {
+    "commit": "ff1187b",
+    "scannedAt": "2026-08-29T09:56:00+05:30",
+    "trigger": "push",
+    "analyzerVersion": "3db6559658cd",
+    "sastVersion": "c4f9ce954093",
+    "reportedSCA": 4
+  },
+  "findings": [
+    {
+      "name": "github.com/dgrijalva/jwt-go",
+      "version": "v3.2.0+incompatible"
+    },
+    {
+      "name": "github.com/gin-gonic/gin",
+      "version": "v1.6.0"
+    },
+    {
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20200116001909-b77594299b42"
+    },
+    {
+      "name": "golang.org/x/text",
+      "version": "v0.3.2"
+    }
+  ],
+  "scannedPackages": [
+    {
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1"
+    },
+    {
+      "name": "github.com/dgrijalva/jwt-go",
+      "version": "v3.2.0+incompatible"
+    },
+    {
+      "name": "github.com/gin-contrib/sse",
+      "version": "v0.1.0"
+    },
+    {
+      "name": "github.com/gin-gonic/gin",
+      "version": "v1.6.0"
+    },
+    {
+      "name": "github.com/go-playground/assert/v2",
+      "version": "v2.0.1"
+    },
+    {
+      "name": "github.com/go-playground/locales",
+      "version": "v0.13.0"
+    },
+    {
+      "name": "github.com/go-playground/universal-translator",
+      "version": "v0.17.0"
+    },
+    {
+      "name": "github.com/go-playground/validator/v10",
+      "version": "v10.2.0"
+    },
+    {
+      "name": "github.com/golang/protobuf",
+      "version": "v1.3.3"
+    },
+    {
+      "name": "github.com/google/gofuzz",
+      "version": "v1.0.0"
+    },
+    {
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.9"
+    },
+    {
+      "name": "github.com/leodido/go-urn",
+      "version": "v1.2.0"
+    },
+    {
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.12"
+    },
+    {
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180228061459-e0a39a4cb421"
+    },
+    {
+      "name": "github.com/modern-go/reflect2",
+      "version": "v0.0.0-20180701023420-4b7aa43c6742"
+    },
+    {
+      "name": "github.com/pmezard/go-difflib",
+      "version": "v1.0.0"
+    },
+    {
+      "name": "github.com/stretchr/objx",
+      "version": "v0.5.2"
+    },
+    {
+      "name": "github.com/stretchr/testify",
+      "version": "v1.9.0"
+    },
+    {
+      "name": "github.com/ugorji/go",
+      "version": "v1.1.7"
+    },
+    {
+      "name": "github.com/ugorji/go/codec",
+      "version": "v1.1.7"
+    },
+    {
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20200116001909-b77594299b42"
+    },
+    {
+      "name": "golang.org/x/text",
+      "version": "v0.3.2"
+    },
+    {
+      "name": "golang.org/x/tools",
+      "version": "v0.0.0-20180917221912-90fa682c2a6e"
+    },
+    {
+      "name": "gopkg.in/check.v1",
+      "version": "v0.0.0-20161208181325-20d25e280405"
+    },
+    {
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.2.8"
+    },
+    {
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1"
+    }
+  ]
+}
+

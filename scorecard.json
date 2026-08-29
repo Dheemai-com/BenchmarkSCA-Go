@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-29T04:39:50.028Z",
+  "benchmarkId": "BenchmarkSCA-Go",
+  "ecosystem": "Go",
+  "oracleVerifiedAt": "2026-08-29",
+  "scan": {
+    "commit": "ff1187b",
+    "scannedAt": "2026-08-29T09:56:00+05:30",
+    "trigger": "push",
+    "analyzerVersion": "3db6559658cd",
+    "sastVersion": "c4f9ce954093",
+    "reportedSCA": 4
+  },
+  "corpus": {
+    "packages": 26,
+    "findings": 4,
+    "clean": 22,
+    "direct": 4,
+    "transitive": 22
+  },
+  "score": {
+    "total": 26,
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "tn": 22,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1
+  },
+  "byRelation": {
+    "direct": {
+      "total": 4,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "accuracy": 1
+    },
+    "transitive": {
+      "total": 22,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 21,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "accuracy": 1
+    }
+  },
+  "coverage": 1,
+  "unexpectedFindings": [],
+  "unscannedOracle": [],
+  "unlabeledScanned": [],
+  "minimums": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1,
+    "coverage": 1,
+    "packages": 26,
+    "findings": 4,
+    "clean": 22,
+    "direct": 4,
+    "transitive": 22
+  }
+}

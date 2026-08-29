@@ -1,18 +1,237 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "benchmarkId": "BenchmarkSCA-Go",
   "ecosystem": "Go",
   "verifiedAt": "2026-08-29",
-  "cases": {
-    "github.com/dgrijalva/jwt-go@v3.2.0+incompatible": { "verdict": "cve", "reference": "CVE-2020-26160" },
-    "github.com/gin-gonic/gin@v1.6.0": { "verdict": "cve", "reference": "CVE-2020-28483" },
-    "golang.org/x/text@v0.3.2": { "verdict": "cve", "reference": "CVE-2020-14040" },
-    "github.com/stretchr/testify@v1.9.0": { "verdict": "clean", "why": "precision control" }
+  "oracle": "Every exact resolved module is independently checked against OSV; finding means one or more active advisories, clean means none.",
+  "minimums": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1,
+    "coverage": 1,
+    "packages": 26,
+    "findings": 4,
+    "clean": 22,
+    "direct": 4,
+    "transitive": 22
   },
-  "transitiveCases": {
-    "golang.org/x/sys@v0.0.0-20200116001909-b77594299b42": {
-      "verdict": "cve",
-      "via": "resolved go.sum graph",
-      "reference": "GHSA-p782-xgp4-8hr8"
+  "packages": [
+    {
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/dgrijalva/jwt-go",
+      "version": "v3.2.0+incompatible",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "go.mod",
+      "references": [
+        "GHSA-w73w-5m7g-f7qc"
+      ]
+    },
+    {
+      "name": "github.com/gin-contrib/sse",
+      "version": "v0.1.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/gin-gonic/gin",
+      "version": "v1.6.0",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "go.mod",
+      "references": [
+        "GHSA-2c4m-59x9-fr2g"
+      ]
+    },
+    {
+      "name": "github.com/go-playground/assert/v2",
+      "version": "v2.0.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/go-playground/locales",
+      "version": "v0.13.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/go-playground/universal-translator",
+      "version": "v0.17.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/go-playground/validator/v10",
+      "version": "v10.2.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/golang/protobuf",
+      "version": "v1.3.3",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/google/gofuzz",
+      "version": "v1.0.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.9",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/leodido/go-urn",
+      "version": "v1.2.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.12",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180228061459-e0a39a4cb421",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/modern-go/reflect2",
+      "version": "v0.0.0-20180701023420-4b7aa43c6742",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/pmezard/go-difflib",
+      "version": "v1.0.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/stretchr/objx",
+      "version": "v0.5.2",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/stretchr/testify",
+      "version": "v1.9.0",
+      "expected": "clean",
+      "relation": "direct",
+      "sourceFile": "go.mod",
+      "references": []
+    },
+    {
+      "name": "github.com/ugorji/go",
+      "version": "v1.1.7",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "github.com/ugorji/go/codec",
+      "version": "v1.1.7",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20200116001909-b77594299b42",
+      "expected": "finding",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": [
+        "GHSA-p782-xgp4-8hr8"
+      ]
+    },
+    {
+      "name": "golang.org/x/text",
+      "version": "v0.3.2",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "go.mod",
+      "references": [
+        "GHSA-5rcv-m4m3-hfh7"
+      ]
+    },
+    {
+      "name": "golang.org/x/tools",
+      "version": "v0.0.0-20180917221912-90fa682c2a6e",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "gopkg.in/check.v1",
+      "version": "v0.0.0-20161208181325-20d25e280405",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.2.8",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
+    },
+    {
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "go.sum",
+      "references": []
     }
-  }
+  ]
 }
