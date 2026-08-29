@@ -4,4 +4,6 @@
 > evaluation. Do not build or execute it.
 
 A public Go Modules SCA accuracy starter corpus for Vybscan. `ground-truth.json` is the independent
-vulnerable/clean oracle. Transitive module cases still need to be added.
+vulnerable/clean oracle. `go.sum` pins the resolved module graph so lockfile parsing and transitive
+classification can be verified independently. The corpus remains intentionally small and is not a
+claim of ecosystem-wide coverage.
